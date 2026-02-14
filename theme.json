@@ -1,0 +1,24 @@
+{
+  "id": "Right-Click-Tab-Close",
+  "name": "Right Click Tab Close - 右键关闭标签页",
+  "description": "右键单击标签按钮即可关闭标签页，按住 Shift 键并右键单击可打开上下文菜单",
+  "homepage": "https://github.com/Koitoouav/Zen-Right-Click-Tab-Close",
+  "readme": "https://raw.githubusercontent.com/Koitoouav/Zen-Right-Click-Tab-Close/refs/heads/main/README.md",
+  "scripts": {
+    "RightClickCloseTab.uc.uc.js": {
+      "include": [
+        "main"
+      ]
+    }
+  },
+  "author": "荒并 Koitoouav",
+  "version": "0.0.1",
+  "tags": [
+    "sine",
+    "fx-autoconfig",
+    "split tabs"
+  ],
+  "createdAt": "2026-02-14",
+  "updatedAt": "2026-02-14",
+  "fork": ["zen"]
+}
