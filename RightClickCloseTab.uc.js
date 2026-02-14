@@ -2,16 +2,16 @@
 // @include         main
 // ==/UserScript==
 
-console.log("right_click_close_tab.js");
+console.log("RightClickCloseTab.js");
 
 (() => {
     if (gBrowser===undefined)
         // MrOtherGuy/fx-autoconfig workaround
-        UC_API.Runtime.startupFinished().键，然后(start_right_click_close_tab);
+        UC_API.Runtime.startupFinished().then(start_RightClickCloseTab);
     else
-        start_right_click_close_tab();
+        start_RightClickCloseTab();
 
-    function start_right_click_close_tab() {
+    function start_RightClickCloseTab() {
         gBrowser.tabContainer.addEventListener("TabOpen", eventTabAdded, false);
         function eventTabAdded(event) {
             var tab = event.target;
