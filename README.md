@@ -1,2 +1,1 @@
-# Zen-Right-Click-Tab-Close
- Mod for Zen Browser
+右键单击标签按钮即可关闭标签页。按住 Shift 键并右键单击可打开上下文菜单。 
