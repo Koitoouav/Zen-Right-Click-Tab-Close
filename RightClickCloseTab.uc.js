@@ -1,7 +1,6 @@
 console.log("RightClickCloseTab.js");
-
 (() => {
-    if (gBrowser===undefined)
+    if (gBrowser === undefined)
         UC_API.Runtime.startupFinished().then(start_RightClickCloseTab);
     else
         start_RightClickCloseTab();
@@ -13,20 +12,18 @@ console.log("RightClickCloseTab.js");
             tab.addEventListener('click', onTabEvent);
             tab.addEventListener('contextmenu', onTabEvent);
         }
-
-
         function onTabEvent(event) {
-            if (event.button != 2 || event.shiftKey  )
+            if (event.button != 2 || event.shiftKey)
                 return;
-
+            if (this.pinned) {
+                return;
+            }
             event.preventDefault();
             event.stopPropagation();
-
             if (event.type == 'click')
                 gBrowser.removeTab(this, {animate: true});
         }
-
-        gBrowser.tabContainer.querySelectorAll('tab').forEach( function(tab, index) {
+        gBrowser.tabContainer.querySelectorAll('tab').forEach(function(tab) {
             tab.addEventListener('click', onTabEvent);
             tab.addEventListener('contextmenu', onTabEvent);
         });
