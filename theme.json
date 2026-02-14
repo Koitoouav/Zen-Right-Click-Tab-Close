@@ -16,9 +16,8 @@
   "tags": [
     "sine",
     "fx-autoconfig",
-    "split tabs"
+    "tabs"
   ],
   "createdAt": "2026-02-14",
-  "updatedAt": "2026-02-14",
-  "fork": ["zen"]
+  "updatedAt": "2026-02-14"
 }
