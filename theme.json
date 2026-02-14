@@ -5,9 +5,9 @@
   "homepage": "https://github.com/Koitoouav/Zen-Right-Click-Tab-Close",
   "readme": "https://raw.githubusercontent.com/Koitoouav/Zen-Right-Click-Tab-Close/refs/heads/main/README.md",
   "scripts": {
-    "RightClickCloseTab.uc.uc.js": {
+    "RightClickCloseTab.uc.js": {
       "include": [
-        "main"
+        "chrome://browser/content/browser.xhtml"
       ]
     }
   },
@@ -21,3 +21,4 @@
   "createdAt": "2026-02-14",
   "updatedAt": "2026-02-14"
 }
+
