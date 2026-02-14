@@ -4,7 +4,6 @@ console.log("RightClickCloseTab.js");
         UC_API.Runtime.startupFinished().then(start_RightClickCloseTab);
     else
         start_RightClickCloseTab();
-
     function start_RightClickCloseTab() {
         gBrowser.tabContainer.addEventListener("TabOpen", eventTabAdded, false);
         function eventTabAdded(event) {
